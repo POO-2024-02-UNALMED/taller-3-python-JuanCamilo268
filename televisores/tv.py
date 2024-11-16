@@ -8,36 +8,36 @@ class TV:
         self._precio = _precio
         self._control = _control
         TV._numTV += 1
-    def setMarca(marca):
+    def setMarca(self, marca):
         self._marca = marca
    
-    def getMarca():
+    def getMarca(self):
         return self._marca
     
-    def setCanal(canal):
+    def setCanal(self, canal):
         if self._estado == True:
             self._canal = canal
    
-    def getCanal():
+    def getCanal(self):
         return self._canal
     
-    def setPrecio(precio):
+    def setPrecio(self, precio):
         self._precio = precio
    
-    def getPrecio():
+    def getPrecio(self):
         return self._precio
     
-    def setVolumen(volumen):
+    def setVolumen(self, volumen):
         if self._estado == True:
             self._volumen = volumen
    
-    def getVolumen():
+    def getVolumen(self):
         return self._volumen
     
-    def setControl(control):
+    def setControl(self, control):
         self._control = control
    
-    def getNombre():
+    def getNombre(self):
         return self._control
     
     def setNumTv(num):
@@ -46,33 +46,33 @@ class TV:
     def getNumTv():
         return TV._numTV
 
-    def turnOff():
+    def turnOff(self):
         if self._estado == True:
             self._estado = False
     
-    def turnOn():
+    def turnOn(self):
         if self._estado == False:
             self._estado = True
     
-    def getEstado():
+    def getEstado(self):
         return self._estado
     
-    def canalUp():
+    def canalUp(self):
         if self._estado ==True:
             if self._canal < 120:
                 self._canal += 1
     
-    def canalDown():
+    def canalDown(self):
         if self._estado == True:
             if self._canal > 1:
                 self.canal -= 1
     
-    def volumenUp():
+    def volumenUp(self):
         if self.estado == True:
             if self._volumen < 7:
                 self._volumen += 1
     
-    def volumenDown():
+    def volumenDown(self):
         if self._volumen == True:
             if self._volumen > 0:
                 self._volumen -= 1
